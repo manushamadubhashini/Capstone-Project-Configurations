@@ -1,4 +1,5 @@
 spring:
+
   cloud:
     gateway:
       server:
@@ -22,12 +23,11 @@ spring:
           default-filters:
             - PreserveHostHeader
 
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowed-methods: "*"
-            allowed-headers: "*"
-
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins: "*"
+                allowed-methods: "*"
+                allowed-headers: "*"
 server:
   port: 7000
